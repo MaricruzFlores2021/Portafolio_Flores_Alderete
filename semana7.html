@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 7</title>
+</head>
+<body>
+    
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="estil.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  
+  </head>
+  <body>
+    <div class="wrapper">
+      
+      <main class="main">
+        <div class="info-content">
+          <h1>Tema de la <span>Semana 7</span> :<br> <span>Uso de Hooks en React</span></h1>
+           <p>
+            <br>Los Hooks en React son funciones que gestionan estado, efectos secundarios y contexto en componentes de función. Algunos son useState, useEffect, useContext, useRef, useReducer, y opciones como useCallback y useMemo.</p> <br>
+           <a href="#"><button class="download-cv" style="font-family:cursive;">MÁS ABAJO INFORMACIÓN </button></a>
+        </div>
+        <img src="img/S7_Portada.png">
+      </main>
+    </div>
+      <div class="about">
+        <div class="about-info">
+          <h2>USO DE HOOKS EN REACT</h2> <br><hr><br>
+          
+          <p>
+Los Hooks son funciones especiales que permiten usar características de React en componentes de función. Proporcionan una manera de manejar el estado, efectos secundarios, contexto y más en componentes de función. Aquí hay una descripción detallada de algunos de los Hooks más comunes: <br>
+<b style="color:blue;">1. useState:</b><br>
+<b style="margin-left:40px;color:yellow;">•	Funcionamiento:</b> Permite a los componentes de función en React tener su propio estado interno. Al llamar a useState con un valor inicial, devuelve un array con dos elementos: el estado actual y una función para actualizar ese estado. <br>
+  <b style="margin-left:40px;color:yellow;">•	Uso Común:</b> Se emplea para gestionar variables de estado local en componentes funcionales, facilitando el control y actualización de datos en la interfaz. <br>
+<b style="color:blue;">2. useEffect: </b><br>
+<b style="margin-left:40px;color:yellow;">•	Funcionamiento:</b> Realiza operaciones secundarias en componentes de función. Permite manejar efectos secundarios, como solicitudes a una API, manipulación del DOM y suscripciones a eventos, después de que el componente ha sido renderizado. <br>
+<b style="margin-left:40px;color:yellow;">•	Uso Común:</b> Para gestionar tareas asíncronas y realizar acciones después del montaje del componente o antes de su desmontaje. <br>
+<b style="color:blue;">3. useContext: </b><br>
+<b style="margin-left:40px;color:yellow;">•	Funcionamiento:</b> Facilita el acceso a un contexto React desde un componente funcional. Consumiendo el valor del contexto más cercano, evita la necesidad de pasar props a través de varios niveles de componentes. <br>
+<b style="margin-left:40px;color:yellow;">•	Uso Común:</b> Cuando es necesario acceder a datos globales o compartidos en diferentes partes de la aplicación sin pasarlos manualmente a través de props. <br>
+<b style="color:blue;">4. useRef: </b><br>
+<b style="margin-left:40px;color:yellow;">•	Funcionamiento:</b> Crea una referencia mutable que persiste a través de renderizaciones y no provoca re-renderizaciones adicionales cuando cambia. Se utiliza para acceder a nodos del DOM directamente y mantener valores entre renderizaciones sin afectar el ciclo de vida del componente. <br>
+<b style="margin-left:40px;color:yellow;">•	Uso Común:</b> Para manipular directamente elementos del DOM, como obtener medidas o enfocar un input. <br>
+<b style="color:blue;">5. useReducer: </b><br>
+<b style="margin-left:40px;color:yellow;">•	Funcionamiento:</b> Es una alternativa a useState para manejar estados más complejos. Permite gestionar lógica más avanzada al especificar cómo el estado debería cambiar en respuesta a acciones. <br>
+<b style="margin-left:40px;color:yellow;">•	Uso Común:</b> Se aplica cuando el estado depende del estado anterior, o cuando la lógica de actualización del estado es más compleja y requiere un control más preciso. <br>
+<b style="color:blue;">6. useCallback: </b><br>
+<b style="margin-left:40px;color:yellow;">•	Funcionamiento:</b> Memoiza funciones para evitar su recreación en cada renderización. Retorna la misma instancia de la función entre renderizaciones a menos que las dependencias cambien. <br>
+<b style="margin-left:40px;color:yellow;">•	Uso Común:</b> Para pasar funciones como props a componentes hijos, evitando renders innecesarios y mejorando el rendimiento. <br>
+<b style="color:blue;">7. useMemo: </b><br>
+<b style="margin-left:40px;color:yellow;">•	Funcionamiento:</b> Memoiza un valor calculado y lo recalcula solo si una de las dependencias ha cambiado. Ayuda a evitar cálculos costosos en cada renderización. <br>
+<b style="margin-left:40px;color:yellow;">•	Uso Común:</b> Para realizar cálculos dentro del componente y solo se quiere recalcular cuando las dependencias específicas cambien. <br>
+<b style="color:blue;">8. Hooks Personalizados: </b><br>
+<b style="margin-left:40px;color:yellow;">•	Funcionamiento:</b> Los Hooks personalizados son funciones creadas por el usuario que pueden utilizar otros Hooks y encapsular lógica compleja para su reutilización en varios componentes. <br>
+<b style="margin-left:40px;color:yellow;">•	Uso Común:</b> Se utilizan para abstraer lógica común y fomentar la reutilización de código, mejorando la legibilidad y mantenibilidad de los componentes. <br><br>
+<b style="color:greenyellow;">•	PROCEDIMIENTO:</b> El uso de Hooks en React implica importar 'react' y el Hook específico, declararlo en el componente funcional y utilizarlo para gestionar el estado, efectos secundarios o contexto. Se pueden configurar dependencias y, en ocasiones, manejar tareas de limpieza. La creación de Hooks personalizados mejora la reutilización de la lógica en diferentes componentes. <br><br>
+<b style="color:orange;">•	RESULTADOS:</b> Se obtiene una comprensión fundamental de cómo gestionar eficientemente el estado, los efectos secundarios y el contexto en componentes de función. Los ejemplos específicos, como useState para el estado y useEffect para operaciones secundarias, proporcionan herramientas esenciales para el desarrollo de aplicaciones React. La utilización de Hooks como useContext, useRef, useReducer, useCallback, useMemo, y la creación de Hooks personalizados, permite abstraer lógica común y mejorar la modularidad del código. 
+          </p>
+          <button class="download-cv"></button>
+        </div>
+      </div>
+      
+    
+      
+    
+      <footer class="footer"> 
+        <div class="footer-content">
+          <h2>Maricruz Doris Flores Alderete</h2>
+          <h5>Desarrollador Web</h5>
+        </div>
+        <div class="sotial-networks">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="redes">
+            
+        </div>
+      </footer>
+    </body>
+</body>
+</html>

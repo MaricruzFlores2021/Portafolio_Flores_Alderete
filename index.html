@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio Electronico</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"> PORTAFOLIO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">PORTADA</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">INTRODUCCIÓN</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">TABLA DE CONTENIDO</a></li>
+                    <li><a href="#trabajos" onclick="seleccionar()">TRABAJOS REALIZADOS</a></li>
+                    <li><a href="#conclusion" onclick="seleccionar()">CONCLUSIÓN</a></li>
+                    <li><a href="#reflexion" onclick="seleccionar()">REFLEXIÓN Y BIBLIOGRAFÍA</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfiloff.jpg" alt="">
+            </div>
+            <h1 style="margin-bottom: 20px;">Maricruz Doris Flores Alderete</h1>
+            <h2>INGENIERA DE SISTEMAS - UNCP</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION INTRODUCCION -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Introducción</h2>
+            <h3>¡ Bienvenidos a mi portafolio digital del curso de Desarrollo Web !</h3>
+            <p>Hola, <span>soy Maricruz Doris Flores Alderete.</span> estudiante de la carrera de Ingenieria de Sistemas en la Universidad Nacional del Centro del Peru (UNCP), cursando el noveno semestre de la carrera. <br>En calidad de estudiante universitaria que figura en el quinto y tercio superior de mi carrera profesional, he cultivado un sólido fundamento en distintos aspectos de la informática y la administración de proyectos. Mi formación abarca la destreza en lenguajes de programación como Java, JavaScript y Python, así como la habilidad para llevar a cabo pruebas de calidad de software utilizando herramientas como Selenium, Postman y Cypress. Adicionalmente, tengo conocimientos en la metodología RUP, SCRUM, XP y Cascada , lo que me confiere la versatilidad necesaria para adaptarme a las particularidades de cada proyecto. Mi pericia en la gestión de bases de datos se extiende a plataformas como SQL Server y PostgreSQL, y he participado en iniciativas de Business Intelligence, orientadas al análisis de datos con miras a respaldar la toma de decisiones fundamentadas.
+                Asimismo, demuestro habilidades en la concepción y dirección de proyectos, lo que me permite abordar con eficiencia tareas de complejidad notable. Mi familiaridad con las normativas ISO garantiza la observancia de estándares de calidad en los proyectos en los que intervengo. Finalmente, he adquirido destrezas en el procesamiento y análisis de datos geoespaciales a través de la herramienta QGIS, lo que amplía mi conjunto de habilidades y me capacita para enfrentar proyectos multidisciplinarios. 
+                Finalmente, espero con anticipación la oportunidad de poner en práctica estos conocimientos y habilidades en entornos laborales especializados, al tiempo que sigo avanzando en mi desarrollo profesional y académico. </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento: </strong>
+                            31-05-2002
+                        </li>
+                        <li>
+                            <strong>Teléfono: </strong>
+                            930947132
+                        </li>
+                        <li>
+                            <strong>Email: </strong>
+                            e_2019200653k@uncp.edu.pe
+                        </li>
+                        
+                        <li>
+                            <strong>Ubicación: </strong>
+                            El Tambo-Huancayo-Junín
+                        </li>
+                        <li>
+                            <strong>Cargo: </strong>
+                            <span>Desarrollador</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        
+                        <div class="interes">
+                            <i class="fa-bars"></i>
+                            <span>EXPLORAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LECTURA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-angles-up"></i>
+                            <span>IDIOMAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-tv"></i>
+                            <span>SERIES</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="skill">
+                        <span>HTML-CSS-BOOTSTRAP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PYTHON</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+                    <div class="skill">
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Tolerancia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Aprendizaje constante</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>98%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Analítica</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>74%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Formación Académica</h3>
+                    <div class="item izq">
+                        <h4>Educación Primaria</h4>
+                        <span class="casa">Institución Privada Carrusel</span>
+                        <span class="fecha">2008 - 2009</span>
+                        <p>La escuela queda ubicada en el distrito de El Tambo-Huancayo, estudie hasta el 2to grado de primaria</p>
+                        <span class="casa">Institución Pública Ricardo Menendés</span>
+                        <span class="fecha">2010 - 2013</span>
+                        <p>Curse desde tercer grado hasta sexto grado en la escuela ubicada en El Tambo-Huancayo</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="item der">
+                        <h4>Educación Secundaria</h4>
+                        <span class="casa">Institución Pública Mariscal Castilla</span>
+                        <span class="fecha">2014 - 2018</span>
+                        <p>Estudie mi nivel secundario en El Tambo-Huancayo</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Educación Superior</h4>
+                        <span class="casa">Universidad Nacional del Centro del Perú</span>
+                        <span class="fecha">2019 - ACTUAL</span>
+                        <p>Aun cursando el noveno semestre, la universidad está ubicada en la ciudad universitaria, distrito de El Tambo-Huancayo</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Desarrollador de Proyectos</h4>
+                        <span class="casa">Universidad Nacional del Centro del Perú</span>
+                        <span class="fecha">08/2023 - PRESENTE</span>
+                        <p>Implementar un sistema experto para mejorar la productividad en la crianza comercial de cuyes en Huancayo, a través de la optimización de procesos como la reproducción, lactancia, recría y engorde.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Comité de Calidad</h4>
+                        <span class="casa">Facultad de Ingeniería de Sistemas</span>
+                        <span class="fecha">04/2023 - 07/2023</span>
+                        <p>·	Planificar y ejecutar las acciones de la política de calidad.
+                            <br>.   Planificar y ejecutar la estrategia de evaluación-planeación-acción.<br>
+                            ·	REFERENCIA: Juan Humberto Quijada Villegas  |Numero: 954464977
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Docente de Inglés</h4>
+                        <span class="casa">ICPNA</span>
+                        <span class="fecha">07/2018 - 12/2018</span>
+                        <p>Adaptar las diferentes actividades al nivel de edad y habilidad de los niños, y fomentar un ambiente de aprendizaje seguro y divertido que los anime a explorar y disfrutar del idioma inglés.
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Tabla de Contenido por semanas</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/S1_Tabla.jpg" alt="">
+                    <a href="semana1.html">
+                        <div class="overlay">
+                        <h3>SEMANA 1</h3>
+                        <p><b>Fundamentos de la Tecnología Web</b></p>
+                       </div>
+                    </a>
+                    
+                </div>
+                <div class="proyecto">
+                    <img src="img/S2_Tabla.png" alt="">
+                    <a href="semana2.html">
+                        <div class="overlay">
+                            <h3>SEMANA 2</h3>
+                            <p><b>HyperText Markup Language (HTML)</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/S3_Tabla.jpg" alt="">
+                    <a href="semana3.html">
+                        <div class="overlay">
+                            <h3>SEMANA 3</h3>
+                            <p><b>Estilos CSS y Diseño Responsivo</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/S4_Tabla.png" alt="">
+                    <a href="semana4.html">
+                        <div class="overlay">
+                            <h3>SEMANA 4</h3>
+                            <p><b>Desarrollo Fronted – Javascript- Canvas</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/S5_Tabla.png" alt="">
+                    <a href="semana5.html">
+                        <div class="overlay">
+                            <h3>SEMANA 5</h3>
+                            <p><b>Desarrollo FrontEnd con Framework JS y Estilos</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/S6_Tabla.png" alt="">
+                    <a href="semana6.html">
+                        <div class="overlay">
+                            <h3>SEMANA 6</h3>
+                            <p><b>Desarrollo con Frameworks JS y APIs</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/S7_Tabla.jpg" alt="">
+                    <a href="semana7.html">
+                        <div class="overlay">
+                            <h3>SEMANA 7</h3>
+                            <p><b>Uso de Hooks en React</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/S8_Tabla.jpg" alt="">
+                    <div class="overlay">
+                        <h3>SEMANA 8</h3>
+                        <p><b>Parcial de consolidado - Evaluaciones</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--SECCIÓN TRABAJOS REALIZADOS-->
+    <section id="trabajos" class="trabajos">
+        <div class="contenido-seccion">
+            <h2>Trabajos realizados</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/TResponsivo1.png" alt="">
+                    <a href="trabajoP1A.html">
+                        <div class="overlay">
+                        <h3><b style="color:orange">TRABAJO 01</b></h3>
+                        <p><b>Diseño Responsivo con Flex y Google Fonts</b></p>
+                       </div> 
+                    </a>
+                    
+                </div>
+                <div class="proyecto">
+                    <img src="img/TResponsivo2.jpg" alt="">
+                    <a href="C-Diseño responsivo-float/p2ejerC.html">
+                        <div class="overlay">
+                            <h3><b style="color:orange">TRABAJO 02</b></h3>
+                            <p><b>Diseño Responsivo con Float</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/TPastel.jpg" alt="">
+                    <a href="PASTEL/gráficopastel.html">
+                        <div class="overlay">
+                            <h3><b style="color:orange">TRABAJO 03</b></h3>                            
+                            <p><b>Gráfico de pastel con Canvas</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/TReloj.jpg" alt="">
+                    <a href="RELOJ 2/relojma.html">
+                        <div class="overlay">
+                            <h3><b style="color:orange">TRABAJO 04</b></h3>                       
+                            <p><b>Reloj analógico con Canvas</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/TPerspectiva.jpg" alt="">
+                    <a href="WebMueblesPerspectiva/muebles.html">
+                        <div class="overlay">
+                            <h3><b style="color:orange">TRABAJO 05</b></h3>                       
+                            <p><b>Página Web de la empresa de muebles PERSPECTIVA</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/TFotogrami.png" alt="">
+                    <a href="WebFotosFotogrami/fotogrami.html">
+                        <div class="overlay">
+                            <h3><b style="color:orange">TRABAJO 06</b></h3>                       
+                            <p><b>Página Web de la empresa de fotografías FOTOGRAMI</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/TMascoteando.jpg" alt="">
+                    <a href="WebVeterinariaMascoteando/mascoteando.html">
+                        <div class="overlay">
+                            <h3><b style="color:orange">TRABAJO 07</b></h3>                       
+                            <p><b>Página web de una clínica veterinaria MASCOTEANDO</b></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- SECCION CONCLUSIÓN -->
+     <section id="conclusion" class="conclusion">
+        <div class="contenido-seccion">
+            <br><h2>Conclusión</h2><br>
+            <p><b>
+                En estas enriquecedoras ocho semanas inmerso en el fascinante universo de la tecnología web, he consolidado no solo conocimientos fundamentales, sino también habilidades avanzadas que me otorgan la confianza necesaria para abordar proyectos web con eficiencia y destreza. Desde el inicio, al comprender el papel esencial de HTML y su integración en el Modelo de Objetos del Documento, sentí cómo se establecían los cimientos sólidos que han impulsado mi progreso en el desarrollo web.
+                <br><br>A medida que avanzaban las semanas, mi horizonte se expandió hacia CSS, diseño responsivo y JavaScript, explorando la creación de elementos interactivos y gráficos a través del cautivador lienzo de HTML Canvas. La transición hacia React representó un hito trascendental, transitando desde el desarrollo basado en componentes hasta la habilidosa gestión dinámica de interfaces mediante props y la incorporación de Hooks para manejar el estado y los efectos de manera más eficiente.
+                <br><br>En esta última semana, al reflexionar sobre el conjunto de conocimientos adquiridos, me maravillé al reconocer la magnitud de mi progreso. Desde la concepción de interfaces estáticas hasta la implementación de estrategias avanzadas como la creación de Hooks personalizados en React, me encuentro listo y entusiasmado para enfrentar desafíos aún más complejos en el desarrollo web. Este viaje de aprendizaje continuo y crecimiento me inspira, y estoy emocionado por el camino que se extiende ante mí, lleno de nuevas oportunidades y descubrimientos en la vastedad del desarrollo web.</b></p><br><br>
+            </div>
+        </section>
+    </section>
+
+
+    <!--REFLEXIÓN Y REFERENCIAS-->
+     <!-- SECCION CURRICULUM -->
+     <section id="reflexion" class="reflexion">
+        <div class="contenido-seccion">
+            <h2>Reflexión y Bibliografía</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Reflexión por semana</h3>
+                    <div class="item izq">
+                        <h4>Semana 01</h4>
+                        <p>Esta semana, consolidé conocimientos clave en tecnología web, desde HTML hasta diseño UX/UI. Comprender los roles en proyectos y aplicar el Modelo de Objetos del Documento me brindó confianza para enfrentar proyectos web eficientemente. Lista para futuros desafíos con una base sólida.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="item der">
+                        <h4>Semana 02</h4>
+                        <p>La semana de HTML amplió mi comprensión de su papel esencial en la construcción web, desde su definición y etiquetas clave hasta la práctica en Visual Studio Code. El enfoque en el DOM y el Critical Rendering Path resaltó su importancia para una visualización eficiente.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Semana 03</h4>
+                        <p>Esta semana, al explorar CSS y Diseño Responsivo, comprendí la importancia crítica de las hojas de estilo en la presentación web. Aprendí técnicas precisas de aplicar estilos, y las herramientas como Flexbox y Grid transformaron mi enfoque en el diseño eficiente. La práctica en Visual Studio Code consolidó estos conocimientos. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Semana 04</h4>
+                        <p>Esta semana, profundicé en JavaScript y HTML Canvas, comprendiendo variables, operadores, estructuras de control y objetos. Experimenté con la práctica en Visual Studio Code, creando un reloj analógico y un gráfico circular con Canvas HTML, fortaleciendo mis habilidades de desarrollo front-end.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Semana 05</h4>
+                        <p>Me sumergí en el desarrollo basado en componentes con JSX y abordé técnicas de estilización, desde estilos inline hasta Styled Components. Seguí un procedimiento que incluyó la instalación de Node.js y la creación de proyectos React con opciones como Create React App y Next.js, consolidando mis habilidades para proyectos más avanzados.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Semana 06</h4>
+                        <p>Aprendí a transmitir información en React mediante props y children, consolidando habilidades esenciales para construir interfaces dinámicas y eficientes en aplicaciones web.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Semana 07</h4>
+                        <p>Se profundizó en los Hooks de React, herramientas poderosas para gestionar estado y efectos en componentes de función. Destacó casos clave, como useState para el estado dinámico y useEffect para acciones secundarias. La creación de Hooks personalizados fue resaltada como estrategia para mejorar la reutilización del código, simplificando y optimizando el proceso de desarrollo en React.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Semana 08</h4>
+                        <p>Se evaluó todos los conociemtos adquiridos mediante la teória y práctica de los temas expuestos en el primer consolidado. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Bibliografía por semana</h3>
+                    <div class="item izq">
+                        <h4>Semana 01</h4>
+                        <p>Bartoli, A. (2018). Introducción al frontend y backend. Recuperado de: https://openaccess.uoc.edu/bitstream/10609/141486/1/ <br>Tecnologias%20y%20herramientas%20para%20el%20 <br>desarrollo%20web_Modulo1_Introduccion%20al%20 <br>frontend%20y%20backend.pdf  </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Semana 02</h4>
+                        <p>Idevik, X. (2021). ¿Qué es una etiqueta HTML y cuáles son las más importantes? Thinking for Innovation. Recuperado de: https://www.iebschool.com/blog/que-es-etiqueta-html-analitica-usabilidad/ </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Semana 03</h4>
+                        <p>Sharma, P. (2021, diciembre 24). CSS GRID Vs FLEXBOX, choose between grid and flex. Cynoteck; Cynoteck Technology Solutions. Recuperado de: https://cynoteck.com/es/blog-post/css-grid-vs-flexbox/</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Semana 04</h4>                
+                        <p>Suelves, S. (2023). Introducción a Canvas de HTML5. Uoc.edu. Recuperado de:  https://mosaic.uoc.edu/2015/04/14/introduccion-a-canvas-de-html5/</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Semana 05</h4>
+                        <p>Coppola, M. (2022, junio 20). ¿Qué es React y para qué sirve? Hubspot.es. https://blog.hubspot.es/website/que-es-react
+
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Semana 06</h4>
+                        <p>Gonzales, D. (2023, mayo 19). ¿Por qué los desarrolladores adoran Axios? Meltstudio. https://www.meltstudio.co/post/por-que-los-desarrolladores-adoran-axios</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Semana 07</h4>
+                        <p>Huet, P. (2020, octubre 14). React Hooks: Qué son y qué problemas solucionan. Openwebinars.net. https://openwebinars.net/blog/react-hooks-que-son-y-que-problemas-solucionan/</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <h2>MARICRUZ DORIS FLORES ALDERETE</h2>
+            <h5>Desarrollador Web</h5>
+          </div>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

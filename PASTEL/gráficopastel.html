@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Pastel</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column; /* Para alinear verticalmente */
+        }
+
+        #canvas-container {
+            text-align: center;
+        }
+
+        canvas {
+            display: inline-block;
+        }
+
+        .legend {
+            display: flex;
+            justify-content: center; /* Centrar horizontalmente */
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .legend-color {
+            width: 15px;
+            height: 15px;
+            margin-right: 7px;
+            border: 1px solid black; /* Borde para cada color de la leyenda */
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container">
+        <canvas id="pieChart" width="300" height="300"></canvas>
+    </div>
+    <div id="legend-container" class="legend">
+        <!-- La leyenda se generará dinámicamente desde JavaScript -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<html>
+	<title>Reloj Anal&oacute;gico</title>
+	<head>	
+	<style>	
+	   body {
+		background-color: white;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Make the body take up the full viewport height */
+            margin: 0; /* Remove default margin */
+	   }
+	</style>
+	<script>
+	
+	var ho = 0; var mi = 0; var se = 0;
+	var horario = ""; var fecha = "";
+	var medWidth = 0; var medHeigth = 0;
+	var diaSemana = new Array(
+	    "Domingo", "Lunes", "Martes",
+	    "Miercoles", "Jueves", "Viernes",
+	    "Sabado"
+	);
+	var mesNombre = new Array(
+	    "Enero", "Febrero", "Marzo", "Abril",
+	    "Mayo", "Junio", "Julio", "Agosto",
+	    "Septiembre", "Octubre", "Noviembre",
+	    "Diciembre"
+	);
+	
+	function formatClock(setNumber) {
+	   if(setNumber > -1 && setNumber < 10) {
+	       return "0" + setNumber;
+	   } else {
+	       return setNumber;
+	   }
+	}
+	
+	function format12Hour24(setNumber) {
+	   if(setNumber > 12 && setNumber < 25) {
+	       return setNumber - 12;
+	   } else {
+	       return setNumber;
+	   }
+	}
+	
+	function setLoad() { setClock(); }
+	
+	function setClock() {
+	   var cCh = ":";
+	   var nClk = new Date();
+	   ho = nClk.getHours();
+	   mi = nClk.getMinutes();
+	   se = nClk.getSeconds();
+	   var dia = nClk.getDate();
+	   var mes = nClk.getMonth();
+	   var anio = nClk.getFullYear();
+	   var diaSem = nClk.getDay();
+	   var bk = se % 2;
+	   if(bk==1) { cCh = " "; } else { cCh = ":"; }
+	   // Cargar la Hora literal
+	   horario = formatClock(format12Hour24(ho)) + cCh +
+	   formatClock(mi) + cCh + formatClock(se);
+	   // Cargar la fecha litereal
+	   fecha = diaSemana[diaSem] + ", " + dia + " de " + mesNombre[mes] + " de " + anio;
+	   setTimeout('setClock()', 1000);
+	   nClk = null;
+	   // Disparar conteo y cargar el cuadrante.
+	   setRunClock();
+	   setQuadrantClock();
+	}
+	
+	function setRunClock() {
+	   var c = document.getElementById("miClock");
+	   var ctx = c.getContext("2d");
+	   medWidth = c.width / 2;
+	   medHeigth = c.height / 2;
+	   ctx.clearRect(0, 0, c.width, c.height);
+	   // Iniciar posicionamiento de las Manecillas del Reloj
+	   var hora = format12Hour24(ho);
+	   var segundo = se; var minuto = mi;
+	   // Manipular las manecillas //
+	   // Manecilla de la Hora
+	   var sHrX = 0; var sHrY = 0;
+	   var sMnX = 0; var sMnY = 0;
+	   var sSgX = 0; var sSgY = 0;
+	   ctx.beginPath();
+	   sHrX = (Math.cos(hora * Math.PI/6 - Math.PI/2) * 80) + medWidth;
+	   sHrY = (Math.sin(hora * Math.PI/6 - Math.PI/2) * 80) + medHeigth;
+	   ctx.lineCap = "round";
+	   ctx.moveTo(medWidth, medHeigth);
+	   ctx.lineTo(sHrX, sHrY);
+	   ctx.strokeStyle = "black";
+	   ctx.closePath();
+	   ctx.stroke();
+	   ctx.beginPath();
+	   sHrX = (Math.cos(hora * Math.PI/6 - Math.PI/2 * - 1) * 15) + medWidth;
+	   sHrY = (Math.sin(hora * Math.PI/6 - Math.PI/2 * - 1) * 15) + medHeigth;
+	   ctx.lineCap = "round";
+	   ctx.moveTo(medWidth, medHeigth);
+	   ctx.lineTo(sHrX, sHrY);
+	   ctx.strokeStyle = "black";
+	   ctx.closePath();
+	   ctx.stroke();
+	   // Manecillas Minutero
+	   ctx.beginPath();
+	   sMnX = (Math.cos(minuto * Math.PI/30 - Math.PI/2) * 90) + medWidth;
+	   sMnY = (Math.sin(minuto * Math.PI/30 - Math.PI/2) * 90) + medHeigth;
+	   ctx.lineCap = "round";
+	   ctx.moveTo(medWidth, medHeigth);
+	   ctx.lineTo(sMnX, sMnY);
+	   ctx.strokeStyle = "blue";
+	   ctx.closePath();
+	   ctx.stroke();
+	   ctx.beginPath();
+	   sMnX = (Math.cos(minuto * Math.PI/30 - Math.PI/2 * - 1) * 15) + medWidth;
+	   sMnY = (Math.sin(minuto * Math.PI/30 - Math.PI/2 * - 1) * 15) + medHeigth;
+	   ctx.lineCap = "round";
+	   ctx.moveTo(medWidth, medHeigth);
+	   ctx.lineTo(sMnX, sMnY);
+	   ctx.strokeStyle = "blue";
+	   ctx.closePath();
+	   ctx.stroke();
+	   // Manecilla Segundero
+	   ctx.beginPath();
+	   sSgX = (Math.cos(segundo * Math.PI/30 - Math.PI/2) * 90) + medWidth;
+	   sSgY = (Math.sin(segundo * Math.PI/30 - Math.PI/2) * 90) + medHeigth;
+	   ctx.lineCap = "round";
+	   ctx.moveTo(medWidth, medHeigth);
+	   ctx.lineTo(sSgX, sSgY);
+	   ctx.strokeStyle = "red";
+	   ctx.closePath();
+	   ctx.stroke();
+	   ctx.beginPath();
+	   sSgX = (Math.cos(segundo * Math.PI/30 - Math.PI/2 * - 1) * 20) + medWidth;
+	   sSgY = (Math.sin(segundo * Math.PI/30 - Math.PI/2 * - 1) * 20) + medHeigth;
+	   ctx.lineCap = "round";
+	   ctx.moveTo(medWidth, medHeigth);
+	   ctx.lineTo(sSgX, sSgY);
+	   ctx.strokeStyle = "red";
+	   ctx.closePath();
+	   ctx.stroke();
+	}
+	
+	function setQuadrantClock() {
+	   var c = document.getElementById("miClock");
+	   var ctx = c.getContext("2d");
+	   // Colocar el Texto de la hora en pantalla.
+	   ctx.font="14px Courier";
+	   ctx.fillText(fecha, medWidth - 120, 10);
+	   ctx.strokeStyle = "black";
+	   ctx.fillText(horario, medWidth - 30, 30);
+	   ctx.strokeStyle = "black";
+	   ctx.fillText("Maricruz Doris Flores Alderete - 2023", medWidth - 150, 330);
+	   ctx.strokeStyle = "#black";
+	   // Dibujar el contorno doble del reloj
+	   ctx.beginPath();
+	   ctx.arc(medWidth + 2, medHeigth + 2, 131, 0, 2*Math.PI);
+	   ctx.strokeStyle = "black";
+	   ctx.stroke();
+	   ctx.beginPath();
+	   ctx.arc(medWidth + 2, medHeigth + 2, 129, 0, 2*Math.PI);
+	   ctx.strokeStyle = "#black";
+	   ctx.stroke();
+	   // Colocar cuadrante del Reloj
+	   ctx.font = "14px Couriel";
+	   ctx.fillStyle = 'black';
+	   var q=0; var xH=0; var yH = 0;
+	   // Ensambla los Minutos
+	   for(q=0; q < 60; q++) {
+	   xH = (Math.cos(q * Math.PI/30) * 100) + medWidth;
+	   yH = (Math.sin(q * Math.PI/30) * 100) + medHeigth;
+	   ctx.fillStyle = 'brown';
+	   ctx.fillRect(xH, yH, 3, 3);
+	}
+	   // Ensambla las Horas
+	   for(q=1; q < 13; q++) {
+	      // Colocar los cuadraditos
+	      xH = (Math.cos(q * Math.PI/6) * 100) + medWidth;
+	      yH = (Math.sin(q * Math.PI/6) * 100) + medHeigth;
+	      ctx.fillStyle = 'blue';
+	      ctx.fillRect(xH, yH, 7, 7);
+	      // Colocar los numeros
+	      xH = (Math.cos(q * Math.PI/6 - Math.PI/2) * 115) + medWidth - 2;
+	      yH = (Math.sin(q * Math.PI/6 - Math.PI/2) * 115) + medHeigth + 8;
+	      ctx.fillStyle = 'black';
+	      ctx.fillText(q.toString(), xH, yH);
+	   }
+	   ctx.stroke();
+	}	
+	</script>
+	</head>
+	<body onload="setLoad()">
+	<canvas id="miClock" width="350" height="350">Este navegador no soporta Canvas</canvas>
+	</body>
+	</html>
