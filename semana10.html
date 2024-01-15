@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 10</title>
+</head>
+<body>
+    
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="estil.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  
+  </head>
+  <body>
+    <div class="wrapper">
+      
+      <main class="main">
+        <div class="info-content">
+          <h1>Tema de la <span>Semana 10</span> :<br> <span>Next.Js Incremental Static Regeneration (ISR) - Incremental Static Generation (ISG)</span></h1>
+           <p>
+            <br>Next.js ofrece generación estática y regeneración estática para mejorar la velocidad de carga pre-renderizando páginas. La Incremental Static Regeneration (ISR) actualiza páginas estáticas de forma incremental, mientras que Incremental Static Generation (ISG) optimiza el rendimiento al generar y actualizar solo lo necesario. Estas características hacen de Next.js una elección versátil para proyectos web eficientes y dinámicos.</p> <br>
+           <a href="#"><button class="download-cv" style="font-family:cursive;">MÁS ABAJO INFORMACIÓN </button></a>
+        </div>
+        <img src="img/S10_Portada.png">
+      </main>
+    </div>
+      <div class="about">
+        <div class="about-info">
+          <h2>NEXT.JS: INCREMENTAL STATIC REGENERATION (ISR) - INCREMENTAL STATIC GENERATION (ISG)</h2> <br><hr><br>
+          <p>
+            <b style="color:cyan;">•	Static Generate - Static Regeneration:</b><br>
+            <b style="margin-left:40px;color:yellow;">o Enfoque: </b>	La generación estática de páginas en Next.js ofrece la posibilidad de crear archivos HTML estáticos durante la fase de compilación. <br>
+            <b style="margin-left:40px;color:yellow;">o Importancia: </b>	Este enfoque optimiza la velocidad de carga al pre-renderizar las páginas, permitiendo una entrega eficiente de contenido estático. <br>
+            <b style="margin-left:40px;color:yellow;">o Funcionalidad: </b>	Con Static Regeneration, Next.js añade una capa de dinamismo al proceso, ya que regenera estas páginas estáticas en segundo plano. Esta regeneración puede ocurrir en intervalos específicos o en respuesta a eventos específicos, garantizando una actualización dinámica del contenido sin necesidad de recompilar la aplicación completa. <br>
+            <b style="margin-left:40px;color:yellow;">o Proceso: </b>	Con esta estrategia, se lleva a cabo una única ejecución de todo el JavaScript y las solicitudes a la API necesarias para generar el código HTML que se mostrará durante la fase de implementación. Una vez procesadas y generadas, las páginas se almacenan como estáticas, garantizando una rápida disponibilidad. En la actualidad, no es necesario realizar un nuevo despliegue ante cambios, ya que Next.js permite la creación o actualización de páginas estáticas después de la implementación inicial gracias a la función de Incremental Static Regeneration (ISR). Esta capacidad permite conservar los beneficios de la generación estática, incluso al escalar a un gran número de páginas, brindando flexibilidad y eficiencia en la gestión del contenido. <br><br>
+            
+            <b style="color:cyan;">•	Incremental Static Regeneration (ISR):</b><br>
+            <b style="margin-left:40px;color:yellow;">o Definición: </b>	ISR es una característica avanzada de Next.js que lleva la generación estática a un nivel superior. Permite la regeneración incremental de páginas estáticas basada en la demanda del usuario. <br>
+            <b style="margin-left:40px;color:yellow;">o Importancia</b>	En lugar de regenerar todas las páginas, ISR identifica y actualiza solo aquellas que han experimentado cambios. Este enfoque ofrece una eficiencia aún mayor y posibilita actualizaciones dinámicas en tiempo real. <br>
+            <b style="margin-left:40px;color:yellow;">o Ejemplo</b>	Ejemplo de Incremental Static Regeneration (ISR) en Next.js: Supongamos que gestionas un sitio de noticias con Next.js y aplicas ISR a las páginas de artículos. Cuando un nuevo artículo se publica, en lugar de tener que regenerar toda la página, ISR permite actualizar solo la página específica afectada. Así, los visitantes obtienen contenido actualizado rápidamente sin afectar el rendimiento global del sitio. <br><br>
+            <b style="color:cyan;">•	Incremental Static Generation (ISG):</b><br>
+            <b style="margin-left:40px;color:yellow;">o Definición: </b>	ISG representa una técnica que se centra en la actualización incremental de páginas estáticas, garantizando que solo se generen y actualicen los contenidos necesarios, optimizando aún más el rendimiento y reduciendo los tiempos de carga. <br>
+            <b style="margin-left:40px;color:yellow;">o Importancia: </b>	Estas características son esenciales para aplicaciones que buscan combinar la eficiencia de la generación estática con la flexibilidad de actualización dinámica. <br>
+            <b style="margin-left:40px;color:yellow;">o Ejemplo: </b>	Ejemplo de Incremental Static Generation (ISG) en Next.js: Imagina que tienes un catálogo de productos en una tienda online construida con Next.js. Al utilizar ISG, puedes actualizar dinámicamente la página de un producto solo cuando hay cambios relevantes, como actualizaciones en el inventario o información del producto. Esto mejora la eficiencia al generar y actualizar solo lo necesario, manteniendo la frescura del contenido sin comprometer el rendimiento general del sitio. <br><br>
+            •	Estas características hacen de Next.js una opción versátil para el desarrollo web, proporcionando opciones flexibles para la creación de proyectos dinámicos y eficientes. <br><br>
+            <b style="color: greenyellow;">•	PROCEDIMIENTOS:</b> Lo primero que se hizo es instalar las dependencias npm i, luego se creo la función para traer los datos con async, fetch y await en el componente y renderizado. También, para las imágenes utilizamos next image el cual es exclusivo de Next. <br><br>
+            <b style="color:orange;">•	RESULTADOS:</b>En esta parte el reto implicó la creación de una aplicación utilizando la API de Marvel. El enlace a un repositorio (https://github.com/stivens19/marvel-app-fis) proporciona detalles adicionales para la implementación de la aplicación Marvel, y la documentación oficial de la API (https://developer.marvel.com/) ofrece información esencial. Este desafío brinda la oportunidad de desarrollar habilidades en el consumo de API REST, así como de trabajar con imágenes en el contexto de desarrollo web. <br>
+                       
+          </p>
+          <button class="download-cv"></button>
+        </div>
+      </div>
+      <body>
+
+        <body style="background-color:#191c32">
+            <b><h2  style="margin-top:20px; margin-left:40px; color:white;">RESULTADOS DE LOS RETOS QUE REALICE</h2> <br><hr><br></b>
+            <center>
+                <img src="img/S10_R1.jpg" alt="Imagen Central" width="40%">
+                <img src="img/S10_R4.jpg" alt="Imagen Central" width="40%">
+                <img src="img/S10_R2.jpg" alt="Imagen Central" width="40%">
+                <img src="img/S10_R3.jpg" alt="Imagen Central" width="40%">
+            </center>
+        
+        </body>
+
+      <footer class="footer"> 
+        <div class="footer-content">
+          <h2>Maricruz Doris Flores Alderete</h2>
+          <h5>Desarrollador Web</h5>
+        </div>
+        <div class="sotial-networks">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="redes">
+        </div>
+      </footer>
+    </body>
+</body>
+</html>

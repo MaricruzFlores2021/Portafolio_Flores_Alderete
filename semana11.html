@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 11</title>
+</head>
+<body>
+    
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="estil.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  
+  </head>
+  <body>
+    <div class="wrapper">
+      
+      <main class="main">
+        <div class="info-content">
+          <h1>Tema de la <span>Semana 11</span> :<br> <span>Server Side Props- Next Auth</span></h1>
+           <p>
+            <br>En esta semana se destacaron dos conceptos en Next.js, getServerSideProps para renderización en el servidor, permitiendo operaciones antes de enviar la página; y Next Auth, simplificando la implementación de autenticación en aplicaciones Next.js con características como gestión de proveedores, sesiones, y personalización de flujos de autenticación.</p> <br>
+           <a href="#"><button class="download-cv" style="font-family:cursive;">MÁS ABAJO INFORMACIÓN </button></a>
+        </div>
+        <img src="img/S11_Portada.png">
+      </main>
+    </div>
+      <div class="about">
+        <div class="about-info">
+          <h2>SERVER SIDE PROPS- NEXT AUTH</h2> <br><hr><br>
+          <p>
+            <b style="color:blue;">•	Server Side Props:</b> En Next.js, getServerSideProps es una función esencial para la renderización de páginas en el servidor. Al exportar esta función desde el archivo de una página, puedes realizar operaciones en el servidor antes de que la página se envíe al cliente. Esto es particularmente útil cuando necesitas datos dinámicos que no están disponibles en tiempo de compilación. Además, getServerSideProps se ejecuta en cada solicitud al servidor, permitiendo la obtención de datos específicos para cada solicitud. <br><br>
+            <b style="color:blue;">•	Next Auth: </b> Es una biblioteca que simplifica la implementación de autenticación en aplicaciones web basadas en Next.js. Algunos conceptos clave son: <br>
+            <b style="margin-left:40px;color:cyan;">o	Instalación y Configuración:</b> Comienza instalando Next Auth y configúralo en tu proyecto. Puedes definir proveedores de autenticación (como Google, GitHub, etc.) y establecer las configuraciones necesarias. La configuración es crucial para adaptar la autenticación a las necesidades específicas de tu aplicación. <br>
+            <b style="margin-left:40px;color:yellow;">o	Obtener Información de la Sesión:</b> Next Auth proporciona herramientas para acceder a la información de la sesión del usuario autenticado. Puedes utilizar un hook como useSession para obtener detalles sobre el usuario autenticado, lo que te permite personalizar la interfaz y la funcionalidad de tu aplicación según el estado de autenticación. <br>
+            <b style="margin-left:40px;color:cyan;">o	Proveedores y Credenciales:</b> Los proveedores de autenticación son servicios externos que permiten a los usuarios autenticarse en tu aplicación. Puedes configurar los proveedores que desees utilizar, como Google o GitHub. Además, debes gestionar las credenciales necesarias para autenticar a los usuarios a través de estos proveedores. <br>
+            <b style="margin-left:40px;color:yellow;">o	Callbacks y Verificación de Credenciales:</b> Next Auth proporciona funciones de callback que te permiten personalizar el flujo de autenticación. Puedes utilizar estas funciones para verificar las credenciales del usuario, manejar la creación de usuarios y realizar acciones específicas antes o después de que se complete el proceso de autenticación. <br>
+            <b style="margin-left:40px;color:cyan;">o	Crear Usuario basado en OAuth e Inicio de Sesión Personalizado:</b> Cuando un usuario se autentica mediante un proveedor OAuth, Next Auth te permite utilizar la información proporcionada por ese proveedor para crear un nuevo usuario en tu sistema. Además, puedes personalizar el proceso de inicio de sesión para adaptarlo a los requisitos específicos de tu aplicación. <br>
+            <b style="margin-left:40px;color:yellow;">o	Middlewares: </b>En el contexto de Next.js, los middlewares son funciones que se ejecutan antes de manejar una solicitud. Puedes utilizar middlewares para realizar tareas como autenticación, autorización y otras acciones específicas del servidor. Esto te brinda la flexibilidad de personalizar el comportamiento de tu aplicación según las necesidades particulares de tu proyecto. <br> <br>
+            <b style="color:greenyellow;">•	PROCEDIMIENTOS:</b> En primer lugar, instalé la biblioteca mediante el comando npm install next-auth. Posteriormente, configuré los proveedores de autenticación y especificé las claves de cliente y secreto en un archivo nextauth.js. Aseguré la configuración mediante variables de entorno en un archivo .env.local. En mi aplicación, integré NextAuth.js envolviendo el componente Provider alrededor de la aplicación en el archivo _app.js o _app.tsx. Las páginas de inicio de sesión y cierre de sesión fueron generadas automáticamente por NextAuth.js, y pude personalizarlas según mis necesidades. Finalmente, en mis componentes, utilicé el hook useSession para acceder fácilmente a la información de la sesión del usuario. Estos pasos simples y efectivos me permitieron implementar la autenticación de manera eficiente en mi aplicación Next.js. <br><br>
+            <b style="color:orange;">•	RESULTADOS:</b>  El reto fue crear un subsistema de autenticación con Next.js. Se realizó una serie de tareas que incluyen la creación y configuración de un nuevo proyecto Next.js. Esto implicó organizar la estructura del proyecto, configurar dependencias clave para la autenticación (como next-auth), y establecer rutas para manejar páginas de inicio de sesión, registro y cierre de sesión. Este enfoque integral aborda la creación del proyecto, la configuración de dependencias, la creación de rutas y la implementación de componentes de formulario en el contexto del subsistema de autenticación con Next.js. <br>
+                                   
+          </p>
+          <button class="download-cv"></button>
+        </div>
+      </div>
+      <body>
+
+        <body style="background-color:#191c32">
+            <b><h2  style="margin-top:20px; margin-left:40px; color:white;">RESULTADOS DE LOS RETOS QUE REALICE</h2> <br><hr><br></b>
+            <center>
+                <img src="img/S11_R1.jpg" alt="Imagen Central" width="80%">
+                <img src="img/S11_R2.jpg" alt="Imagen Central" width="80%">
+            </center>
+        
+        </body>
+
+      <footer class="footer"> 
+        <div class="footer-content">
+          <h2>Maricruz Doris Flores Alderete</h2>
+          <h5>Desarrollador Web</h5>
+        </div>
+        <div class="sotial-networks">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="redes">
+        </div>
+      </footer>
+    </body>
+</body>
+</html>

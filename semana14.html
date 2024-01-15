@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 14</title>
+</head>
+<body>
+    
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="estil.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  
+  </head>
+  <body>
+    <div class="wrapper">
+      
+      <main class="main">
+        <div class="info-content">
+          <h1>Tema de la <span>Semana 14</span> :<br> <span>Registro de microservicios en eureka y consumo
+        </span></h1>
+           <p>
+            <br>Eureka simplifica el registro y descubrimiento de microservicios, proporcionando un servidor central para el registro automático. Esto permite una expansión dinámica y una comunicación eficiente entre servicios, con opciones de configuración avanzada y adaptabilidad a entornos en la nube. Eureka se convierte en un componente clave para la gestión dinámica de servicios en infraestructuras basadas en la nube.</p> <br>
+           <a href="#"><button class="download-cv" style="font-family:cursive;">MÁS ABAJO INFORMACIÓN </button></a>
+        </div>
+        <img src="img/S14_Portada.png">
+      </main>
+    </div>
+      <div class="about">
+        <div class="about-info">
+          <h2>REGISTRO DE MICROSERVICIOS EN EUREKA</h2> <br><hr><br>
+          <p>
+            <b style="color:blue;">•	Registro de Microservicios en Eureka: Detalles Expandidos</b> <br>
+            <b style="margin-left:40px;color: cyan;">o	Creación del servidor Eureka: </b><br>
+            <b style="margin-left:80px;color:yellow;">	Medios: </b>Utilizando Spring Cloud, se establece un servidor Eureka como punto central para el registro y descubrimiento de microservicios. <br>
+            <b style="margin-left:80px;color:yellow;">	Configuración: </b>La configuración implica definir el servidor en la aplicación principal y anotar la clase con @EnableEurekaServer. <br>
+            <b style="margin-left:80px;color:yellow;">	Propiedades: </b>Se establecen propiedades como puerto y ubicación para garantizar la accesibilidad y la identificación única del servidor. <br>
+            <b style="margin-left:40px;color: cyan;">o	Registro de un microservicio:</b><br>
+            <b style="margin-left:80px;color:yellow;">	Usos: </b>Cada microservicio utiliza la anotación @EnableDiscoveryClient para registrarse automáticamente en Eureka. <br>
+            <b style="margin-left:80px;color:yellow;">	Especificaciones: </b>Se especifica el nombre, instancia, dirección y metadatos del servicio para facilitar su identificación y conexión. <br>
+            <b style="margin-left:80px;color:yellow;">	Monitoreo: </b>La salud del servicio se monitorea mediante rutas específicas, permitiendo una gestión efectiva de la disponibilidad. <br>
+            <b style="margin-left:40px;color: cyan;">o	Resumen del registro de microservicio:</b><br>
+            <b style="margin-left:80px;color:yellow;">	Importancia: </b>El registro centralizado permite la fácil expansión y contracción de servicios en un entorno distribuido. <br>
+            <b style="margin-left:80px;color:yellow;">	Ventajas: </b>Eureka proporciona un panel de control para supervisar el estado y las instancias de los microservicios registrados. <br>
+            <b style="margin-left:80px;color:yellow;">	Impacto: </b>La información de registro facilita la resiliencia, ya que otros servicios pueden adaptarse a los cambios dinámicos. <br>
+            <b style="margin-left:40px;color: cyan;">o	Consumo de un Microservicio:</b><br>
+            <b style="margin-left:80px;color:yellow;">	Proceso: </b>Los microservicios consultan el servidor Eureka para descubrir y consumir otros servicios disponibles. <br>
+            <b style="margin-left:80px;color:yellow;">	Medios: </b>La carga equilibrada se logra automáticamente, distribuyendo las solicitudes entre las instancias registradas. <br>
+            <b style="margin-left:80px;color:yellow;">	Importancia: </b>La comunicación es más flexible y eficiente, ya que los servicios se actualizan dinámicamente según su disponibilidad. <br>
+            <b style="margin-left:40px;color: cyan;">o	Configuración avanzada en Eureka:</b><br>
+            <b style="margin-left:80px;color:yellow;">	Ajustes: </b>Ajustes de tiempo de espera y renovación garantizan la precisión y la actualización oportuna de los registros. <br>
+            <b style="margin-left:80px;color:yellow;">	Importancia: </b>Las estrategias de renovación evitan la expiración prematura del registro, asegurando la estabilidad del sistema. <br>
+            <b style="margin-left:80px;color:yellow;">	Impacto: </b>La configuración de parámetros de salud permite una supervisión efectiva y la identificación de servicios en problemas. <br>
+            <b style="margin-left:40px;color: cyan;">o	Configuración en la nube:</b><br>
+            <b style="margin-left:80px;color:yellow;">	Entorno: </b>Para entornos en la nube, se integra Eureka con servicios de registro específicos de plataformas como AWS Service Discovery. <br>
+            <b style="margin-left:80px;color:yellow;">	Adaptación: </b>La adaptación de la configuración implica consideraciones sobre seguridad, escalabilidad y redundancia en entornos en la nube. <br>
+            <b style="margin-left:80px;color:yellow;">	Importancia: </b>Eureka se convierte en un componente clave para gestionar dinámicamente servicios en infraestructuras basadas en la nube, proporcionando una capa adicional de abstracción. <br><br>
+            <b style="color:greenyellow;">•	PROCEDIMIENTOS: </b>En este procedimiento, se inicia el servidor de la API mediante el comando .\mvnw spring-boot:run y se realiza la configuración del entorno, incluyendo la conexión a la base de datos MySQL. La implementación del modelo CursoModel define la estructura de la entidad "Curso," mientras que la interfaz CursoRepository y la clase CursoService manejan las operaciones CRUD de la base de datos. El controlador CursoController expone endpoints REST para la manipulación de cursos, permitiendo la recuperación, almacenamiento, visualización y eliminación de datos. Este conjunto de archivos y configuraciones conforma una API funcional, listo para interactuar con aplicaciones front-end u otros sistemas consumidores. <br><br>
+            <b style="color:orange;">•	RESULTADOS: </b>La sesión ha producido avances significativos en el desarrollo del backend del sitio web, implementando una API REST funcional con Spring. Se cubrieron aspectos clave como la creación del servidor Eureka, el registro de microservicios, la configuración avanzada y en la nube. Además, se detallaron configuraciones específicas, como la conexión a la base de datos y operaciones CRUD mediante modelos, repositorios, servicios y controladores. <br>
+                       
+          </p>
+          <button class="download-cv"></button>
+        </div>
+      </div>
+      <body>
+
+      <footer class="footer"> 
+        <div class="footer-content">
+          <h2>Maricruz Doris Flores Alderete</h2>
+          <h5>Desarrollador Web</h5>
+        </div>
+        <div class="sotial-networks">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="redes">
+        </div>
+      </footer>
+    </body>
+</body>
+</html>
